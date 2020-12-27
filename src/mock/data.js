@@ -24,7 +24,7 @@ export const aboutData = {
     'I love working, reading and learning JS ❤️. Although I do have a thing for JS but I believe in using the right tool for the job. A programming language is just a tool!',
   paragraphThree:
     'Beside programming you can also hit me up to discuss football ⚽, chess ♟️, movies/tv-series 🎬 and card tricks 🃏.',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: '',
 };
 
 // PROJECTS DATA
