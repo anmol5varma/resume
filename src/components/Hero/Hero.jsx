@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Particles from 'react-particles-js';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
@@ -23,6 +24,44 @@ const Header = () => {
 
   return (
     <section id="hero" className="jumbotron">
+      <Particles
+        className="particle-js"
+        height="100%"
+        style={{
+          position: 'absolute',
+          top: 0,
+        }}
+        params={{
+          particles: {
+            color: {
+              value: '#2b8a9d',
+            },
+            size: {
+              value: '2',
+            },
+            number: {
+              value: '150',
+            },
+            line_linked: {
+              enable: {
+                auto: true,
+              },
+              distance: '150',
+              color: '#2b8a9d',
+              opacity: '0.4',
+              width: '1',
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: 'repulse',
+              },
+            },
+          },
+        }}
+      />
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
