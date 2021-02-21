@@ -19,10 +19,12 @@ export const heroData = {
 export const aboutData = {
   img: 'solo_me.jpg',
   paragraphOne:
-    'I’m a fullstack software developer from Bangalore, India. I’ve been designing and developing solutions since 2018. I’ve mostly worked professionally with JavaScript and Java.',
+    'I’m a fullstack software developer from Bangalore, India. Currently I am a part of Mckinsey & Company. I’ve been designing and developing solutions since 2018. I’ve mostly worked professionally with JavaScript and Java.',
   paragraphTwo:
-    'I love working, reading and learning JS ❤️. Although I do have a thing for JS but I believe in using the right tool for the job. A programming language is just a tool!',
+    'I have extensively worked on REST APIs, designing micro-service architecture and managing React apps. Apart from this, I also like taking sessions and coaching programs were we guide/nurture client/vendor developers for a long-lasting impact.',
   paragraphThree:
+    'I love working, reading and learning JS ❤️. Although I do have a thing for JS but I believe in using the right tool for the job. A programming language is just a tool!',
+  paragraphFour:
     'Beside programming you can also hit me up to discuss football ⚽, chess ♟️, movies/tv-series 🎬 and card tricks 🃏.',
   resume: '',
 };
@@ -63,9 +65,11 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: 'Super impressed by my elevator pitch?',
-  btn: '',
+  cta: "Super impressed by my elevator pitch? Let's Talk",
+  mailBtn: 'Mail me',
+  callBtn: 'Over phone',
   email: 'anmol5varma@gmail.com',
+  number: '+918098469331',
 };
 
 // FOOTER DATA
