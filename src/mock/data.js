@@ -19,9 +19,9 @@ export const heroData = {
 export const aboutData = {
   img: 'solo_me.jpg',
   paragraphOne:
-    'I’m a fullstack software developer from Bangalore, India. Currently I am a part of Mckinsey & Company. I’ve been designing and developing solutions since 2018. I’ve mostly worked professionally with JavaScript and Java.',
+    'I’m a fullstack software developer from Bangalore, India. Currently, I am a part of the Flipkart family. I’ve been designing and developing solutions since 2018. I’ve mostly worked with JavaScript, NodeJS and JAVA.',
   paragraphTwo:
-    'I have extensively worked on REST APIs, designing micro-service architecture and managing React apps. Apart from this, I also like taking sessions and coaching programs were we guide/nurture client/vendor developers for a long-lasting impact.',
+    'I have extensively worked on REST APIs, designing micro-service architecture and managing React apps. Apart from this, I also like taking sessions and coaching programs for a long-lasting impact.',
   paragraphThree:
     'I love working, reading and learning JS ❤️. Although I do have a thing for JS but I believe in using the right tool for the job. A programming language is just a tool!',
   paragraphFour:
@@ -31,6 +31,16 @@ export const aboutData = {
 
 // PROJECTS DATA
 export const projectsData = [
+  {
+    id: nanoid(),
+    img: 'json',
+    title: 'JSON-Mocks',
+    info:
+      'A CLI that creates a mock REST server. One cam simply dump the mock JSON responses with the required endpoint to get API endpoints up and running.',
+    info2: '',
+    url: 'https://www.npmjs.com/package/json-mocks',
+    repo: 'https://github.com/anmol5varma/json-mocks',
+  },
   {
     id: nanoid(),
     img: 'excel',

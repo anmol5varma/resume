@@ -7,7 +7,7 @@ import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+  const { projects, footer } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -36,7 +36,7 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
+                    duration={500}
                     delay={500}
                     distance="30px"
                   >
@@ -77,8 +77,8 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={500}
+                    delay={500}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
@@ -112,6 +112,14 @@ const Projects = () => {
               </Row>
             );
           })}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-btn cta-btn--hero"
+            href={footer?.networks?.length > 0 && footer?.networks[2].url}
+          >
+            View more
+          </a>
         </div>
       </Container>
     </section>

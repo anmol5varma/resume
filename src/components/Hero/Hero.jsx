@@ -40,7 +40,7 @@ const Header = () => {
               value: '2',
             },
             number: {
-              value: '150',
+              value: isMobile ? '50' : '150',
             },
             line_linked: {
               enable: {
@@ -63,7 +63,7 @@ const Header = () => {
         }}
       />
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Your Name'}</span>
@@ -71,8 +71,8 @@ const Header = () => {
             {subtitle || "I'm the Unknown Developer."}
           </h1>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <Link className="hero-cta" to="about" smooth duration={1000}>
+        <Fade left={isDesktop} bottom={isMobile} duration={500} delay={500} distance="30px">
+          <Link className="hero-cta" to="about" smooth duration={500}>
             <p>
               <span className="cta-btn cta-btn--hero">{cta || 'Know more'}</span>
             </p>
